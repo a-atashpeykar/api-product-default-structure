@@ -12,7 +12,8 @@ class RouteServiceProvider extends ServiceProvider
 {
     private array $apiRoutes = [
         "v1" => [
-            "product" => ["middleware" => "api", "prefix" => "products"]
+            "product" => ["middleware" => "api", "prefix" => "products"],
+            "user" => ["middleware" => "api", "prefix" => "users"],
         ]
     ];
     public function register(): void
